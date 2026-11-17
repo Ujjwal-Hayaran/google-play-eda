@@ -1,0 +1,1321 @@
+{
+ "cleaning_log": [
+  [
+   "Dropped malformed (column-shifted) row",
+   1
+  ],
+  [
+   "Converted Reviews/Installs/Price to numeric, Size to MB, Last Updated to datetime",
+   null
+  ],
+  [
+   "Filled missing Type with 'Free' (Price = 0)",
+   1
+  ],
+  [
+   "Dropped exact duplicate rows",
+   483
+  ],
+  [
+   "Dropped repeated app listings (kept the row with most reviews)",
+   698
+  ]
+ ],
+ "rows_raw": 10841,
+ "rows_clean": 9659,
+ "snapshot_date": "2018-08-08",
+ "missing_rating_raw": 1474,
+ "audit": {
+  "rows_raw": 10841,
+  "missing_by_column": {
+   "Rating": 1474,
+   "Type": 1,
+   "Content Rating": 1,
+   "Current Ver": 8,
+   "Android Ver": 3
+  },
+  "exact_duplicate_rows": 483,
+  "duplicate_app_names": 1181,
+  "non_numeric_reviews": 1,
+  "size_varies_with_device": 1695
+ },
+ "rating_missing_n": 1463,
+ "rating_missing_median_installs": 100.0,
+ "rating_present_median_installs": 100000.0,
+ "reviews_gt_installs": 11,
+ "B1": {
+  "mean": 4.173267447535383,
+  "median": 4.3,
+  "std": 0.536252890556557,
+  "n_rated": 8196,
+  "pct_ge_4": 0.7670815031722792,
+  "mode": 4.3,
+  "raw_mean": 4.191757420456972
+ },
+ "B2": {
+  "n_categories": 33,
+  "n_genres": 118,
+  "n_primary_genres": 48,
+  "top5": {
+   "Family": 1874,
+   "Game": 946,
+   "Tools": 829,
+   "Business": 420,
+   "Medical": 395
+  },
+  "bottom3": {
+   "Parenting": 60,
+   "Comics": 56,
+   "Beauty": 53
+  },
+  "top5_share": 0.4621596438554716
+ },
+ "B3": {
+  "n": 8431,
+  "missing": 1228,
+  "mean": 20.398074755274436,
+  "median": 12.0,
+  "p25": 4.6,
+  "p75": 28.0,
+  "p90": 52.0,
+  "max": 100.0,
+  "skew": 1.6453915943540458,
+  "pct_lt_20": 0.6333768236270905,
+  "pct_gt_50": 0.10390226544893844
+ },
+ "B4": {
+  "counts": {
+   "Free": 8905,
+   "Paid": 754
+  },
+  "pct": {
+   "Free": 0.9219380888290714,
+   "Paid": 0.07806191117092867
+  }
+ },
+ "B5": {
+  "mode": "Everyone",
+  "counts": {
+   "Everyone": 7903,
+   "Teen": 1036,
+   "Mature 17+": 393,
+   "Everyone 10+": 322,
+   "Adults only 18+": 3,
+   "Unrated": 2
+  },
+  "pct": {
+   "Everyone": 0.8182006418883943,
+   "Teen": 0.10725748007040066,
+   "Mature 17+": 0.04068744176415778,
+   "Everyone 10+": 0.033336784346205614,
+   "Adults only 18+": 0.0003105911585050212,
+   "Unrated": 0.00020706077233668082
+  }
+ },
+ "B6": {
+  "top5": [
+   {
+    "App": "Facebook",
+    "Category": "Social",
+    "Installs_Label": "1B+",
+    "Reviews": 78158306,
+    "Rating": 4.1
+   },
+   {
+    "App": "WhatsApp Messenger",
+    "Category": "Communication",
+    "Installs_Label": "1B+",
+    "Reviews": 69119316,
+    "Rating": 4.4
+   },
+   {
+    "App": "Instagram",
+    "Category": "Social",
+    "Installs_Label": "1B+",
+    "Reviews": 66577446,
+    "Rating": 4.5
+   },
+   {
+    "App": "Messenger \u2013 Text and Video Chat for Free",
+    "Category": "Communication",
+    "Installs_Label": "1B+",
+    "Reviews": 56646578,
+    "Rating": 4.0
+   },
+   {
+    "App": "Subway Surfers",
+    "Category": "Game",
+    "Installs_Label": "1B+",
+    "Reviews": 27725352,
+    "Rating": 4.5
+   }
+  ],
+  "n_1b": 20,
+  "n_100m_plus": 233
+ },
+ "B7": {
+  "n": 6287,
+  "pct_rated": 0.7670815031722792,
+  "pct_all": 0.6508955378403561,
+  "n_rated": 8196,
+  "n_5": 271,
+  "n_ge_45": 2550
+ },
+ "B8": {
+  "Free": {
+   "count": 8905,
+   "mean": 234420.5392476137,
+   "median": 1379.0
+  },
+  "Paid": {
+   "count": 754,
+   "mean": 8748.010610079575,
+   "median": 88.5
+  }
+ },
+ "B9": {
+  "largest": {
+   "Game": 41.65732716429814,
+   "Family": 27.312108595975783,
+   "Travel & Local": 24.204374774205203
+  },
+  "smallest": {
+   "Personalization": 11.223879874465812,
+   "Libraries & Demo": 10.598851032021605,
+   "Tools": 8.770228832708048
+  },
+  "overall": 20.398074755274433
+ },
+ "B10": {
+  "n_2018": 6287,
+  "pct": 0.6508955378403561,
+  "by_year": {
+   "2010": 1,
+   "2011": 15,
+   "2012": 26,
+   "2013": 108,
+   "2014": 203,
+   "2015": 448,
+   "2016": 779,
+   "2017": 1792,
+   "2018": 6287
+  }
+ },
+ "M1": {
+  "pearson_raw": 0.04024460734455513,
+  "pearson_log": 0.08426810763737073,
+  "spearman": 0.027184491356942748,
+  "n": 8196,
+  "spearman_p": 0.013849656692897066
+ },
+ "M2": {
+  "top5": {
+   "Events": 4.435555555555555,
+   "Art & Design": 4.359322033898305,
+   "Education": 4.354716981132076,
+   "Books & Reference": 4.344970414201184,
+   "Personalization": 4.332214765100671
+  },
+  "top5_n": {
+   "Events": 45,
+   "Art & Design": 59,
+   "Education": 106,
+   "Books & Reference": 169,
+   "Personalization": 298
+  },
+  "bottom5": {
+   "Travel & Local": 4.06951871657754,
+   "Video Players": 4.0449664429530205,
+   "Tools": 4.040277777777778,
+   "Maps & Navigation": 4.036440677966102,
+   "Dating": 3.9804511278195487
+  },
+  "bottom5_n": {
+   "Travel & Local": 187,
+   "Video Players": 149,
+   "Tools": 720,
+   "Maps & Navigation": 118,
+   "Dating": 133
+  },
+  "kw_stat": 238.84943663104173,
+  "kw_p": 1.7065701619789667e-33,
+  "spread": 0.45510442773600657
+ },
+ "M3": {
+  "n_paid_rated": 602,
+  "pearson": -0.11402775270571776,
+  "spearman": -0.09646504631243885,
+  "spearman_p": 0.01791160344467899,
+  "free_mean": 4.16622333421122,
+  "paid_mean": 4.262126245847177,
+  "mw_p": 8.108375019564798e-11,
+  "bands": {
+   "$0-1": 4.3009433962264145,
+   "$1-2": 4.292079207920792,
+   "$2-5": 4.263829787234043,
+   "$5-10": 4.258620689655173,
+   "$10+": 4.127272727272727
+  },
+  "bands_n": {
+   "$0-1": 106,
+   "$1-2": 101,
+   "$2-5": 282,
+   "$5-10": 58,
+   "$10+": 55
+  },
+  "max_price": 400.0,
+  "n_over_100": 20
+ },
+ "M4": {
+  "table": {
+   "Everyone": {
+    "count": 6618,
+    "mean": 4.166349350256875,
+    "median": 4.3,
+    "std": 0.5582275107885221
+   },
+   "Teen": {
+    "count": 912,
+    "mean": 4.225657894736842,
+    "median": 4.3,
+    "std": 0.404094854238343
+   },
+   "Mature 17+": {
+    "count": 357,
+    "mean": 4.121848739495798,
+    "median": 4.2,
+    "std": 0.5093220318346445
+   },
+   "Everyone 10+": {
+    "count": 305,
+    "mean": 4.225901639344262,
+    "median": 4.3,
+    "std": 0.3993637087571975
+   },
+   "Adults only 18+": {
+    "count": 3,
+    "mean": 4.3,
+    "median": 4.5,
+    "std": 0.43588989435406744
+   },
+   "Unrated": {
+    "count": 1,
+    "mean": 4.1,
+    "median": 4.1,
+    "std": NaN
+   }
+  },
+  "kw_p": 0.021669821768569197
+ },
+ "M5": {
+  "n_big": 3398,
+  "top10": {
+   "Tools": 275,
+   "Action": 189,
+   "Entertainment": 179,
+   "Photography": 173,
+   "Productivity": 147,
+   "Communication": 140,
+   "Sports": 125,
+   "Casual": 122,
+   "Arcade": 118,
+   "Health & Fitness": 113
+  },
+  "hit": {
+   "Tools": 0.33172496984318456,
+   "Action": 0.6077170418006431,
+   "Entertainment": 0.30236486486486486,
+   "Photography": 0.6156583629893239,
+   "Productivity": 0.393048128342246,
+   "Communication": 0.4430379746835443,
+   "Sports": 0.373134328358209,
+   "Casual": 0.5422222222222223,
+   "Arcade": 0.592964824120603,
+   "Health & Fitness": 0.3896551724137931
+  },
+  "total": {
+   "Tools": 829,
+   "Action": 311,
+   "Entertainment": 592,
+   "Photography": 281,
+   "Productivity": 374,
+   "Communication": 316,
+   "Sports": 335,
+   "Casual": 225,
+   "Arcade": 199,
+   "Health & Fitness": 290
+  },
+  "best_hit_rate": {
+   "Racing": 0.6944444444444444,
+   "Photography": 0.6156583629893239,
+   "Action": 0.6077170418006431,
+   "Strategy": 0.6060606060606061,
+   "Arcade": 0.592964824120603
+  }
+ },
+ "M6": {
+  "mean_days": 281.0101459778445,
+  "median_days": 96.0,
+  "p25": 22.0,
+  "p75": 366.0,
+  "pct_30": 0.30396521379024743,
+  "pct_90": 0.49332229009214207,
+  "pct_180": 0.6132104772750803,
+  "pct_365": 0.7498705870172896,
+  "recency": {
+   "<=30d": {
+    "apps": 2936,
+    "median_installs": 1000000.0,
+    "mean_rating": 4.27026721866767,
+    "median_reviews": 18082.0,
+    "share": 0.30396521379024743
+   },
+   "31-90d": {
+    "apps": 1829,
+    "median_installs": 100000.0,
+    "mean_rating": 4.208208020050125,
+    "median_reviews": 1968.0,
+    "share": 0.1893570763018946
+   },
+   "91-180d": {
+    "apps": 1158,
+    "median_installs": 10000.0,
+    "mean_rating": 4.146424642464246,
+    "median_reviews": 198.0,
+    "share": 0.11988818718293819
+   },
+   "181-365d": {
+    "apps": 1320,
+    "median_installs": 10000.0,
+    "mean_rating": 4.116764132553606,
+    "median_reviews": 170.5,
+    "share": 0.13666010974220935
+   },
+   ">1y": {
+    "apps": 2416,
+    "median_installs": 10000.0,
+    "mean_rating": 4.058167330677291,
+    "median_reviews": 164.0,
+    "share": 0.2501294129827104
+   }
+  },
+  "spearman_rating": -0.18214461398943,
+  "spearman_installs": -0.33201400531732395
+ },
+ "M7": {
+  "spearman": 0.3101499575946777,
+  "p": 2.1282996285686384e-187,
+  "n": 8431,
+  "bins": {
+   "<5": {
+    "apps": 2317,
+    "median_installs": 5000.0,
+    "mean_rating": 4.113325991189427,
+    "p1m": 0.13810962451445835
+   },
+   "5-10": {
+    "apps": 1613,
+    "median_installs": 10000.0,
+    "mean_rating": 4.156106870229007,
+    "p1m": 0.2411655300681959
+   },
+   "10-20": {
+    "apps": 1533,
+    "median_installs": 50000.0,
+    "mean_rating": 4.172800645682002,
+    "p1m": 0.30071754729288974
+   },
+   "20-50": {
+    "apps": 2092,
+    "median_installs": 100000.0,
+    "mean_rating": 4.1618579234972675,
+    "p1m": 0.3847992351816444
+   },
+   "50-100": {
+    "apps": 876,
+    "median_installs": 1000000.0,
+    "mean_rating": 4.250902527075812,
+    "p1m": 0.589041095890411
+   }
+  }
+ },
+ "M8": {
+  "top10": [
+   {
+    "App": "Facebook",
+    "Category": "Social",
+    "Reviews": 78158306,
+    "Installs_Label": "1B+",
+    "Rating": 4.1,
+    "Type": "Free"
+   },
+   {
+    "App": "WhatsApp Messenger",
+    "Category": "Communication",
+    "Reviews": 69119316,
+    "Installs_Label": "1B+",
+    "Rating": 4.4,
+    "Type": "Free"
+   },
+   {
+    "App": "Instagram",
+    "Category": "Social",
+    "Reviews": 66577446,
+    "Installs_Label": "1B+",
+    "Rating": 4.5,
+    "Type": "Free"
+   },
+   {
+    "App": "Messenger \u2013 Text and Video Chat for Free",
+    "Category": "Communication",
+    "Reviews": 56646578,
+    "Installs_Label": "1B+",
+    "Rating": 4.0,
+    "Type": "Free"
+   },
+   {
+    "App": "Clash of Clans",
+    "Category": "Game",
+    "Reviews": 44893888,
+    "Installs_Label": "100M+",
+    "Rating": 4.6,
+    "Type": "Free"
+   },
+   {
+    "App": "Clean Master- Space Cleaner & Antivirus",
+    "Category": "Tools",
+    "Reviews": 42916526,
+    "Installs_Label": "500M+",
+    "Rating": 4.7,
+    "Type": "Free"
+   },
+   {
+    "App": "Subway Surfers",
+    "Category": "Game",
+    "Reviews": 27725352,
+    "Installs_Label": "1B+",
+    "Rating": 4.5,
+    "Type": "Free"
+   },
+   {
+    "App": "YouTube",
+    "Category": "Video Players",
+    "Reviews": 25655305,
+    "Installs_Label": "1B+",
+    "Rating": 4.3,
+    "Type": "Free"
+   },
+   {
+    "App": "Security Master - Antivirus, VPN, AppLock, Booster",
+    "Category": "Tools",
+    "Reviews": 24900999,
+    "Installs_Label": "500M+",
+    "Rating": 4.7,
+    "Type": "Free"
+   },
+   {
+    "App": "Clash Royale",
+    "Category": "Game",
+    "Reviews": 23136735,
+    "Installs_Label": "100M+",
+    "Rating": 4.6,
+    "Type": "Free"
+   }
+  ],
+  "mean_rating": 4.44,
+  "min_rating": 4.0
+ },
+ "M9": {
+  "counts": {
+   "Adults only 18+": {
+    "Free": 3,
+    "Paid": 0
+   },
+   "Everyone": {
+    "Free": 7250,
+    "Paid": 653
+   },
+   "Everyone 10+": {
+    "Free": 291,
+    "Paid": 31
+   },
+   "Mature 17+": {
+    "Free": 375,
+    "Paid": 18
+   },
+   "Teen": {
+    "Free": 984,
+    "Paid": 52
+   },
+   "Unrated": {
+    "Free": 2,
+    "Paid": 0
+   }
+  },
+  "pct": {
+   "Adults only 18+": {
+    "Free": 0.0003368893879842785,
+    "Paid": 0.0
+   },
+   "Everyone": {
+    "Free": 0.8141493542953397,
+    "Paid": 0.8660477453580901
+   },
+   "Everyone 10+": {
+    "Free": 0.032678270634475017,
+    "Paid": 0.04111405835543767
+   },
+   "Mature 17+": {
+    "Free": 0.04211117349803481,
+    "Paid": 0.023872679045092837
+   },
+   "Teen": {
+    "Free": 0.11049971925884335,
+    "Paid": 0.06896551724137931
+   },
+   "Unrated": {
+    "Free": 0.00022459292532285232,
+    "Paid": 0.0
+   }
+  },
+  "chi2_p": 0.00012589606858011304
+ },
+ "M10": {
+  "top5": {
+   "Game": {
+    "total_installs": 13457924415,
+    "apps": 946,
+    "share": 0.17867064546809855,
+    "installs_per_app": 14226135.745243128
+   },
+   "Communication": {
+    "total_installs": 11038276251,
+    "apps": 315,
+    "share": 0.14654681374366693,
+    "installs_per_app": 35042146.82857143
+   },
+   "Tools": {
+    "total_installs": 8102771915,
+    "apps": 829,
+    "share": 0.1075743512513873,
+    "installs_per_app": 9774151.887816647
+   },
+   "Family": {
+    "total_installs": 6221541505,
+    "apps": 1874,
+    "share": 0.08259868329071123,
+    "installs_per_app": 3319926.0965848453
+   },
+   "Productivity": {
+    "total_installs": 5793091369,
+    "apps": 374,
+    "share": 0.0769104761059026,
+    "installs_per_app": 15489549.114973262
+   }
+  },
+  "top5_share": 0.5923009698597667,
+  "total": 75322526427.0
+ },
+ "A1": {
+  "naive": [
+   {
+    "App": "R\u00edos de Fe",
+    "Category": "Lifestyle",
+    "Rating": 5.0,
+    "Reviews": 141,
+    "Installs_Label": "1K+"
+   },
+   {
+    "App": "FD Calculator (EMI, SIP, RD & Loan Eligilibility)",
+    "Category": "Finance",
+    "Rating": 5.0,
+    "Reviews": 104,
+    "Installs_Label": "1K+"
+   },
+   {
+    "App": "Oraci\u00f3n CX",
+    "Category": "Lifestyle",
+    "Rating": 5.0,
+    "Reviews": 103,
+    "Installs_Label": "5K+"
+   },
+   {
+    "App": "Barisal University App-BU Face",
+    "Category": "Family",
+    "Rating": 5.0,
+    "Reviews": 100,
+    "Installs_Label": "1K+"
+   },
+   {
+    "App": "Master E.K",
+    "Category": "Family",
+    "Rating": 5.0,
+    "Reviews": 90,
+    "Installs_Label": "1K+"
+   },
+   {
+    "App": "CL REPL",
+    "Category": "Tools",
+    "Rating": 5.0,
+    "Reviews": 47,
+    "Installs_Label": "1K+"
+   },
+   {
+    "App": "AJ Cam",
+    "Category": "Photography",
+    "Rating": 5.0,
+    "Reviews": 44,
+    "Installs_Label": "100+"
+   },
+   {
+    "App": "AI Today : Artificial Intelligence News & AI 101",
+    "Category": "News & Magazines",
+    "Rating": 5.0,
+    "Reviews": 43,
+    "Installs_Label": "100+"
+   },
+   {
+    "App": "CS & IT Interview Questions",
+    "Category": "Family",
+    "Rating": 5.0,
+    "Reviews": 43,
+    "Installs_Label": "1K+"
+   },
+   {
+    "App": "Ek Vote",
+    "Category": "Productivity",
+    "Rating": 5.0,
+    "Reviews": 43,
+    "Installs_Label": "500+"
+   }
+  ],
+  "credible": [
+   {
+    "App": "JW Library",
+    "Category": "Books & Reference",
+    "Rating": 4.9,
+    "Reviews": 922752,
+    "Installs_Label": "10M+"
+   },
+   {
+    "App": "Six Pack in 30 Days - Abs Workout",
+    "Category": "Health & Fitness",
+    "Rating": 4.9,
+    "Reviews": 272337,
+    "Installs_Label": "10M+"
+   },
+   {
+    "App": "Tickets + PDA 2018 Exam",
+    "Category": "Auto & Vehicles",
+    "Rating": 4.9,
+    "Reviews": 197136,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "Learn Japanese, Korean, Chinese Offline & Free",
+    "Category": "Education",
+    "Rating": 4.9,
+    "Reviews": 133136,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "StrongLifts 5x5 Workout Gym Log & Personal Trainer",
+    "Category": "Health & Fitness",
+    "Rating": 4.9,
+    "Reviews": 66791,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "PixPanda - Color by Number Pixel Art Coloring Book",
+    "Category": "Family",
+    "Rating": 4.9,
+    "Reviews": 55723,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "ipsy: Makeup, Beauty, and Tips",
+    "Category": "Beauty",
+    "Rating": 4.9,
+    "Reviews": 49790,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "Hungry Hearts Diner: A Tale of Star-Crossed Souls",
+    "Category": "Family",
+    "Rating": 4.9,
+    "Reviews": 46253,
+    "Installs_Label": "500K+"
+   },
+   {
+    "App": "Lose Belly Fat in 30 Days - Flat Stomach",
+    "Category": "Health & Fitness",
+    "Rating": 4.9,
+    "Reviews": 38098,
+    "Installs_Label": "5M+"
+   },
+   {
+    "App": "Solitaire: Decked Out Ad Free",
+    "Category": "Game",
+    "Rating": 4.9,
+    "Reviews": 37302,
+    "Installs_Label": "500K+"
+   }
+  ],
+  "weighted": [
+   {
+    "App": "JW Library",
+    "Category": "Books & Reference",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.899213281754774,
+    "Reviews": 922752,
+    "Installs_Label": "10M+"
+   },
+   {
+    "App": "Six Pack in 30 Days - Abs Workout",
+    "Category": "Health & Fitness",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.897341258035083,
+    "Reviews": 272337,
+    "Installs_Label": "10M+"
+   },
+   {
+    "App": "Tickets + PDA 2018 Exam",
+    "Category": "Auto & Vehicles",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.896332152902731,
+    "Reviews": 197136,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "Learn Japanese, Korean, Chinese Offline & Free",
+    "Category": "Education",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.894582121485175,
+    "Reviews": 133136,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "StrongLifts 5x5 Workout Gym Log & Personal Trainer",
+    "Category": "Health & Fitness",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.889279807755239,
+    "Reviews": 66791,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "PixPanda - Color by Number Pixel Art Coloring Book",
+    "Category": "Family",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.8871880444887505,
+    "Reviews": 55723,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "ipsy: Makeup, Beauty, and Tips",
+    "Category": "Beauty",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.8856914244444845,
+    "Reviews": 49790,
+    "Installs_Label": "1M+"
+   },
+   {
+    "App": "Hungry Hearts Diner: A Tale of Star-Crossed Souls",
+    "Category": "Family",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.884620393362018,
+    "Reviews": 46253,
+    "Installs_Label": "500K+"
+   },
+   {
+    "App": "Lose Belly Fat in 30 Days - Flat Stomach",
+    "Category": "Health & Fitness",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.881412538941516,
+    "Reviews": 38098,
+    "Installs_Label": "5M+"
+   },
+   {
+    "App": "Solitaire: Decked Out Ad Free",
+    "Category": "Game",
+    "Rating": 4.9,
+    "Weighted_Rating": 4.881026250523091,
+    "Reviews": 37302,
+    "Installs_Label": "500K+"
+   }
+  ],
+  "n_five": 271,
+  "five_median_reviews": 4.0,
+  "rest_median_reviews": 3656.0,
+  "five_median_installs": 100.0,
+  "rest_median_installs": 100000.0,
+  "five_pct_lt_100_reviews": 0.985239852398524,
+  "naive_median_reviews": 68.5
+ },
+ "A2": {
+  "peak_month": "2018-07",
+  "peak_count": 2317,
+  "last90_share": 0.49332229009214207,
+  "dow": {
+   "Monday": 1571,
+   "Tuesday": 1701,
+   "Wednesday": 1701,
+   "Thursday": 1754,
+   "Friday": 1612,
+   "Saturday": 710,
+   "Sunday": 610
+  },
+  "weekday_share": 0.8633398902577907,
+  "sunday_share": 0.06315353556268764,
+  "share_2018": 0.6508955378403561,
+  "pre2017_share": 0.16357801014597784,
+  "monthly": {
+   "2016-01": 40,
+   "2016-02": 47,
+   "2016-03": 49,
+   "2016-04": 50,
+   "2016-05": 49,
+   "2016-06": 76,
+   "2016-07": 83,
+   "2016-08": 58,
+   "2016-09": 68,
+   "2016-10": 89,
+   "2016-11": 82,
+   "2016-12": 88,
+   "2017-01": 98,
+   "2017-02": 127,
+   "2017-03": 128,
+   "2017-04": 90,
+   "2017-05": 121,
+   "2017-06": 111,
+   "2017-07": 134,
+   "2017-08": 160,
+   "2017-09": 158,
+   "2017-10": 213,
+   "2017-11": 205,
+   "2017-12": 247,
+   "2018-01": 286,
+   "2018-02": 297,
+   "2018-03": 408,
+   "2018-04": 394,
+   "2018-05": 690,
+   "2018-06": 911,
+   "2018-07": 2317,
+   "2018-08": 984
+  },
+  "moy17": {
+   "1": 98,
+   "2": 127,
+   "3": 128,
+   "4": 90,
+   "5": 121,
+   "6": 111,
+   "7": 134,
+   "8": 160,
+   "9": 158,
+   "10": 213,
+   "11": 205,
+   "12": 247
+  }
+ },
+ "A3": {
+  "<1K": {
+   "apps": 1790,
+   "rated": 638,
+   "mean_rating": 4.345297805642634,
+   "median_rating": 4.6,
+   "std": 0.8646383745288506,
+   "pct_ge4": 0.7931034482758621
+  },
+  "1K-10K": {
+   "apps": 1355,
+   "rated": 1121,
+   "mean_rating": 4.048617305976807,
+   "median_rating": 4.2,
+   "std": 0.7348471396100642,
+   "pct_ge4": 0.6592328278322926
+  },
+  "10K-100K": {
+   "apps": 1499,
+   "rated": 1443,
+   "mean_rating": 4.038115038115038,
+   "median_rating": 4.2,
+   "std": 0.579530438423568,
+   "pct_ge4": 0.6576576576576577
+  },
+  "100K-1M": {
+   "apps": 1617,
+   "rated": 1598,
+   "mean_rating": 4.132415519399249,
+   "median_rating": 4.2,
+   "std": 0.4669012653051965,
+   "pct_ge4": 0.7259073842302879
+  },
+  "1M-10M": {
+   "apps": 2024,
+   "rated": 2022,
+   "mean_rating": 4.2200296735905045,
+   "median_rating": 4.3,
+   "std": 0.35013166267436824,
+   "pct_ge4": 0.8293768545994066
+  },
+  "10M-100M": {
+   "apps": 1141,
+   "rated": 1141,
+   "mean_rating": 4.3045574057844,
+   "median_rating": 4.3,
+   "std": 0.27773567752470346,
+   "pct_ge4": 0.9053461875547765
+  },
+  "100M-1B": {
+   "apps": 213,
+   "rated": 213,
+   "mean_rating": 4.384976525821596,
+   "median_rating": 4.4,
+   "std": 0.18798741530828159,
+   "pct_ge4": 0.9671361502347418
+  },
+  "1B+": {
+   "apps": 20,
+   "rated": 20,
+   "mean_rating": 4.215,
+   "median_rating": 4.3,
+   "std": 0.2254235779009912,
+   "pct_ge4": 0.85
+  }
+ },
+ "A4": {
+  "n_reviews": 35929,
+  "n_apps": 816,
+  "sent_share": {
+   "Positive": 0.6421831946338612,
+   "Negative": 0.22280052325419578,
+   "Neutral": 0.135016282111943
+  },
+  "rho": 0.24449808504415074,
+  "rho_p": 1.4280590530693459e-12,
+  "n_apps_corr": 816,
+  "band": {
+   "Low (<4.0)": {
+    "apps": 101,
+    "reviews": 4061,
+    "mean_polarity": 0.09639044531269253,
+    "pos": 0.5402610194533366,
+    "neg": 0.27604038414183696,
+    "neu": 0.1836985964048264,
+    "subj": 0.46002595047807
+   },
+   "Mid (4.0-4.49)": {
+    "apps": 452,
+    "reviews": 19722,
+    "mean_polarity": 0.18509438597222622,
+    "pos": 0.6273704492444986,
+    "neg": 0.2210222087009431,
+    "neu": 0.15160734205455836,
+    "subj": 0.49108742653050125
+   },
+   "High (>=4.5)": {
+    "apps": 263,
+    "reviews": 12146,
+    "mean_polarity": 0.2023575439567776,
+    "pos": 0.7003128602008892,
+    "neg": 0.2078873703276799,
+    "neu": 0.09179976947143093,
+    "subj": 0.5093986694071251
+   }
+  },
+  "theme_sent": {
+   "Bugs, crashes & errors": {
+    "Negative": 0.19038101186758277,
+    "Neutral": 0.1150278293135436,
+    "Positive": 0.10518788193992978
+   },
+   "Ads & interruptions": {
+    "Negative": 0.09743910056214866,
+    "Neutral": 0.031127602556173986,
+    "Positive": 0.05798985827590691
+   },
+   "Price & payments": {
+    "Negative": 0.14253591505309182,
+    "Neutral": 0.05153576582148011,
+    "Positive": 0.10553460754995016
+   },
+   "Updates & versions": {
+    "Negative": 0.12167395377888819,
+    "Neutral": 0.05833848690991548,
+    "Positive": 0.10068044900966498
+   },
+   "Account / login / sync": {
+    "Negative": 0.061961274203622733,
+    "Neutral": 0.04885590599876314,
+    "Positive": 0.036146144844623584
+   },
+   "Ease of use & design": {
+    "Negative": 0.0504684572142411,
+    "Neutral": 0.010513296227581941,
+    "Positive": 0.12698825466996055
+   }
+  },
+  "theme_band": {
+   "Bugs, crashes & errors": {
+    "Low (<4.0)": 0.18049741442994335,
+    "Mid (4.0-4.49)": 0.12605212453098064,
+    "High (>=4.5)": 0.10620780503869587,
+    "Low/High ratio": 1.699474105167513
+   },
+   "Ads & interruptions": {
+    "Low (<4.0)": 0.047278995321349424,
+    "Mid (4.0-4.49)": 0.06824865632288815,
+    "High (>=4.5)": 0.06018442285526099,
+    "Low/High ratio": 0.78556864182368
+   },
+   "Price & payments": {
+    "Low (<4.0)": 0.09135680866781581,
+    "Mid (4.0-4.49)": 0.09598418010343779,
+    "High (>=4.5)": 0.12860200889181625,
+    "Low/High ratio": 0.7103839936487136
+   },
+   "Updates & versions": {
+    "Low (<4.0)": 0.12656981039152918,
+    "Mid (4.0-4.49)": 0.10069972619409796,
+    "High (>=4.5)": 0.08891816235797793,
+    "Low/High ratio": 1.423441589829179
+   },
+   "Account / login / sync": {
+    "Low (<4.0)": 0.07067224821472544,
+    "Mid (4.0-4.49)": 0.0418314572558564,
+    "High (>=4.5)": 0.03746089247488885,
+    "Low/High ratio": 1.8865607182770443
+   },
+   "Ease of use & design": {
+    "Low (<4.0)": 0.0866781580891406,
+    "Mid (4.0-4.49)": 0.08077274110130818,
+    "High (>=4.5)": 0.11855754981063725,
+    "Low/High ratio": 0.7311061862157651
+   }
+  },
+  "neg_words": [
+   "game",
+   "time",
+   "like",
+   "play",
+   "can't",
+   "phone",
+   "really",
+   "update",
+   "it's",
+   "level",
+   "money",
+   "want"
+  ],
+  "pos_words": [
+   "game",
+   "good",
+   "great",
+   "love",
+   "like",
+   "time",
+   "really",
+   "easy",
+   "it's",
+   "best",
+   "nice",
+   "better"
+  ],
+  "low_neg_words": [],
+  "high_neg_words": [],
+  "n_file_apps": 1074,
+  "n_file_rows": 64295,
+  "n_text_rows": 37427
+ },
+ "A5": {
+  "n_genres": 47,
+  "n_genres_all": 48,
+  "top5": {
+   "Events": {
+    "n": 45,
+    "mean": 4.435555555555555,
+    "median": 4.5,
+    "std": 0.41949946123898413,
+    "pct_ge4": 0.9333333333333333
+   },
+   "Puzzle": {
+    "n": 123,
+    "mean": 4.3707317073170735,
+    "median": 4.4,
+    "std": 0.3369904671797288,
+    "pct_ge4": 0.9105691056910569
+   },
+   "Art & Design": {
+    "n": 62,
+    "mean": 4.35,
+    "median": 4.4,
+    "std": 0.36293430738276855,
+    "pct_ge4": 0.8709677419354839
+   },
+   "Books & Reference": {
+    "n": 171,
+    "mean": 4.34327485380117,
+    "median": 4.5,
+    "std": 0.43871313206502255,
+    "pct_ge4": 0.8245614035087719
+   },
+   "Personalization": {
+    "n": 298,
+    "mean": 4.332214765100671,
+    "median": 4.4,
+    "std": 0.35896755363459043,
+    "pct_ge4": 0.8959731543624161
+   }
+  },
+  "bottom5": {
+   "Video Players & Editors": {
+    "n": 150,
+    "mean": 4.044666666666667,
+    "median": 4.2,
+    "std": 0.5600259661605428,
+    "pct_ge4": 0.6466666666666666
+   },
+   "Tools": {
+    "n": 720,
+    "mean": 4.040277777777778,
+    "median": 4.2,
+    "std": 0.6194707513230201,
+    "pct_ge4": 0.6819444444444445
+   },
+   "Trivia": {
+    "n": 28,
+    "mean": 4.039285714285714,
+    "median": 4.25,
+    "std": 0.8089038242123701,
+    "pct_ge4": 0.75
+   },
+   "Maps & Navigation": {
+    "n": 118,
+    "mean": 4.036440677966102,
+    "median": 4.2,
+    "std": 0.5273162586358955,
+    "pct_ge4": 0.6610169491525424
+   },
+   "Dating": {
+    "n": 133,
+    "mean": 3.9804511278195487,
+    "median": 4.1,
+    "std": 0.6289070180608121,
+    "pct_ge4": 0.6240601503759399
+   }
+  },
+  "kw_p": 5.56106148490867e-44,
+  "spread": 0.45510442773600657,
+  "most_consistent": {
+   "Action": {
+    "n": 304,
+    "mean": 4.247697368421052,
+    "std": 0.2956136324038843
+   },
+   "Word": {
+    "n": 22,
+    "mean": 4.318181818181818,
+    "std": 0.3064953408118856
+   },
+   "Adventure": {
+    "n": 78,
+    "mean": 4.19102564102564,
+    "std": 0.30924537285576403
+   }
+  },
+  "least_consistent": {
+   "Trivia": {
+    "n": 28,
+    "mean": 4.039285714285714,
+    "std": 0.8089038242123701
+   },
+   "Lifestyle": {
+    "n": 302,
+    "mean": 4.094039735099338,
+    "std": 0.7038793112420724
+   },
+   "Card": {
+    "n": 46,
+    "mean": 4.082608695652174,
+    "std": 0.6957982938326904
+   }
+  }
+ },
+ "SYN": {
+  "n_star": 1988,
+  "star_pct": 0.20581840770266074,
+  "star_cat_top": {
+   "Education": {
+    "apps": 107,
+    "star_share": 0.4485981308411215,
+    "mean_rating": 4.354716981132076
+   },
+   "Photography": {
+    "apps": 281,
+    "star_share": 0.3807829181494662,
+    "mean_rating": 4.155893536121673
+   },
+   "Game": {
+    "apps": 946,
+    "star_share": 0.37315010570824525,
+    "mean_rating": 4.244605116796441
+   },
+   "Shopping": {
+    "apps": 202,
+    "star_share": 0.32673267326732675,
+    "mean_rating": 4.230555555555555
+   },
+   "Entertainment": {
+    "apps": 87,
+    "star_share": 0.3218390804597701,
+    "mean_rating": 4.129885057471265
+   }
+  },
+  "star_cat_bottom": {
+   "Events": {
+    "apps": 64,
+    "star_share": 0.046875,
+    "mean_rating": 4.435555555555555
+   },
+   "Medical": {
+    "apps": 395,
+    "star_share": 0.0379746835443038,
+    "mean_rating": 4.165862068965517
+   },
+   "Libraries & Demo": {
+    "apps": 84,
+    "star_share": 0.023809523809523808,
+    "mean_rating": 4.178125
+   }
+  },
+  "review_rate": {
+   "Free": 0.01621215,
+   "Paid": 0.08247
+  },
+  "profile": {
+   "Median size (MB)": {
+    "Star apps": 24.0,
+    "All other apps": 10.0
+   },
+   "Share free": {
+    "Star apps": 0.9894366197183099,
+    "All other apps": 0.9044453135184461
+   },
+   "Median days since update": {
+    "Star apps": 22.0,
+    "All other apps": 141.0
+   },
+   "Mean price ($)": {
+    "Star apps": 0.02957243460764588,
+    "All other apps": 1.3739225655064529
+   }
+  },
+  "corr_installs_reviews": 0.9677131880341434,
+  "corr_installs_update": -0.33200533770620066,
+  "corr_rating_update": -0.18214461398943002,
+  "corr_installs_size": 0.3101452813954996,
+  "corr_rating_size": 0.050239653267578586,
+  "corr_rating_price": 0.07054719251677194,
+  "corr_installs_price": -0.2315479413551603
+ }
+}
